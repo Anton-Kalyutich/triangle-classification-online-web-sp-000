@@ -9,10 +9,8 @@ class Triangle
   end
   
   def kind
-    if invalid?
-      begin
-        raise TriangleError
-      rescue TriangleError
+    raise TriangleError if invalid?
+      raise TriangleError
       end
     end
     
