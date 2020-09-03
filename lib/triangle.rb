@@ -10,10 +10,7 @@ class Triangle
   
   def kind
     raise TriangleError if invalid?
-      raise TriangleError
-      end
-    end
-    
+   
     if l1 == l2 && l2 == l3
       return :equilateral
     elsif l1 == l2 || l2 == l3 || l1 == l3
